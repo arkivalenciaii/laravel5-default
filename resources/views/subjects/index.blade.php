@@ -15,11 +15,10 @@
         </tr>
         </thead>
         <tbody>
-        @foreach ($prereq as $prereqs)
+        @foreach ($subject->prerequisites as $prereq)
             <tr>
-                <td>{{ $prereqs->subject_code }}</td>
-                <td>{{ $prereqs->subject_name }}</td>
-                <td><a href="#">Remove friend</a></td>
+                <td>{{ $prereq->subject_code }}</td>
+                <td>{{ $prereq->subject_desc }}</td>
             </tr>
         @endforeach
         </tbody>

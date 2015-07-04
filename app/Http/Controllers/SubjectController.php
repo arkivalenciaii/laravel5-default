@@ -13,12 +13,8 @@ class SubjectController extends Controller
     public function index($code)
     {
         $subject = Subject::where('subject_code', '=', $code)->first();
-        $prereq = $subject->prerequisites()->get()->toArray();
 
-        return view('subjects.index')->with([
-            'subject' => $subject,
-            'prereq' => $prereq,
-        ]);
+        return view('subjects.index')->with('subject', $subject);
     }
 
 //    public function getAddPrereq($sub_id,$id)

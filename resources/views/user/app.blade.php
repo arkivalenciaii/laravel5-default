@@ -38,6 +38,7 @@
             </button>
             <a class="navbar-brand" href="#">Project name</a>
         </div>
+        @if(Auth::guest())
         <div id="navbar" class="navbar-collapse collapse">
             <form class="navbar-form navbar-right" role="form">
                 <div class="form-group">
@@ -48,7 +49,8 @@
                 </div>
                 <button type="submit" class="btn btn-success">Sign in</button>
             </form>
-        </div><!--/.navbar-collapse -->
+        </div>
+        @endif<!--/.navbar-collapse -->
     </div>
 </nav>
 
