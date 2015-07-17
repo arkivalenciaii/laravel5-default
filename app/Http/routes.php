@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('dashboard/user');
 });
 
 Route::controllers([
@@ -20,12 +20,17 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('user', [
-    'middleware' => 'auth',
-    'uses' => 'ProfileController@index',
+Route::post('dashboard/user', [
+	'middleware' => 'auth',
+	'uses' => 'DashboardController@create',
 ]);
 
-Route::get('subjects/{code}', [
+Route::get('dashboard/user', [
     'middleware' => 'auth',
-    'uses' => 'SubjectController@index',
+    'uses' => 'DashboardController@index',
 ]);
+
+// Route::get('subjects/{code}', [
+//     'middleware' => 'auth',
+//     'uses' => 'SubjectController@index',
+// ]);
