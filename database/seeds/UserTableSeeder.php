@@ -14,13 +14,15 @@ class UserTableSeeder extends Seeder
         Eloquent::unguard();
 
         App\User::create([
-        	'name' => 'Arki',
+        	'first_name' => 'Arki',
+        	'last_name' => 'Valencia',
         	'email' => 'arki@email.com',
         	'password' => bcrypt('123qwe'),
         ]);
 
         App\User::create([
         	'name' => 'Arki2',
+        	'last_name' => 'Valencia2',
         	'email' => 'arki2@email.com',
         	'password' => bcrypt('123qwe'),
         ]);

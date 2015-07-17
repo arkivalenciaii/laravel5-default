@@ -27,8 +27,8 @@
 		<div class="container">
 				<div class="navbar-brand">
 					<!-- COMPANY LOGO -->
-					<a href="index-2.html">
-						<img src="/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+					<a href="#">
+						<img src="/img/logo/logo.png" alt="APPLES INC" class="img-responsive" height="30" width="120">
 					</a>
 					<!-- /COMPANY LOGO -->
 					<!-- TEAM STATUS FOR MOBILE -->
@@ -311,7 +311,7 @@
 							<li><a href="#"><i class="fa fa-user"></i> My Profile</a></li>
 							<li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
 							<li><a href="#"><i class="fa fa-eye"></i> Privacy Settings</a></li>
-							<li><a href="login.html"><i class="fa fa-power-off"></i> Log Out</a></li>
+							<li><a href="/auth/logout"><i class="fa fa-power-off"></i> Log Out</a></li>
 						</ul>
 					</li>
 					<!-- END USER LOGIN DROPDOWN -->

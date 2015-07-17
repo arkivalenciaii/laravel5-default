@@ -4,7 +4,7 @@
 		<tr>
 		   <th><i class="fa fa-user"></i> ID</th>
 		   <th class="hidden-xs"><i class="fa fa-quote-left"></i> Slot Code</th>
-		   <th><i class="fa fa-dollar"></i> Time</th>
+		   <th><i class="fa fa-clock-o"></i> Time</th>
 		   <th><i class="fa fa-bars"></i> Status</th>
 		</tr>
 	 </thead>
